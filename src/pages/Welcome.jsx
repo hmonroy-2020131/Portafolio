@@ -11,12 +11,14 @@ function Welcome() {
       ref={ref}
       sx={{
         background: theme.palette.mode === 'light'
-          ? 'linear-gradient(135deg, #b3cde0, #e6f0f8)'
-          : theme.palette.background.default,
+          ? 'linear-gradient(135deg, rgba(252, 72, 124, 0.8), rgba(97, 218, 255, 0.6))' // Llamativo en modo claro
+          : 'background.default', // Modo oscuro tradicional
         minHeight: '100vh',
         display: 'flex',
         alignItems: 'center',
+        justifyContent: 'center',
         paddingTop: '64px',
+        transition: 'background-color 0.4s ease',
       }}
     >
       <Container maxWidth="lg">
@@ -30,21 +32,27 @@ function Welcome() {
               textAlign: 'center',
               padding: '4rem 2rem',
               bgcolor: theme.palette.mode === 'light'
-                ? 'rgba(255, 255, 255, 0.6)'
-                : 'rgba(30, 30, 30, 0.7)',
-              backdropFilter: 'blur(10px)',
-              borderRadius: '16px',
-              boxShadow: 6,
+                ? 'rgba(255, 255, 255, 0.85)' // Fondo más claro en modo claro
+                : 'rgba(30, 30, 30, 0.8)', // Fondo oscuro con opacidad
+              backdropFilter: 'blur(15px)',
+              borderRadius: '20px',
+              boxShadow: 10,
               mt: 4,
+              transition: 'transform 0.3s ease-in-out',
               '&:hover': {
-                transform: 'scale(1.01)',
+                transform: 'scale(1.02)',
               },
             }}
           >
             <Typography
               variant="h2"
               gutterBottom
-              sx={{ fontWeight: 700, color: 'primary.main' }}
+              sx={{
+                fontWeight: 700,
+                color: 'primary.main',
+                fontSize: '3rem',
+                textTransform: 'uppercase',
+              }}
             >
               Bienvenido
             </Typography>
@@ -59,7 +67,14 @@ function Welcome() {
             />
             <Typography
               variant="h5"
-              sx={{ fontStyle: 'italic', color: 'text.secondary' }}
+              sx={{
+                fontStyle: 'italic',
+                color: 'text.secondary',
+                fontSize: '1.2rem',
+                fontWeight: 600,
+                maxWidth: 700,
+                margin: '0 auto',
+              }}
             >
               “Creando soluciones, aprendiendo cada día”
             </Typography>
