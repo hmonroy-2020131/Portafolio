@@ -1,21 +1,26 @@
-import { Container, Typography, Box, Stack, Grid, useTheme } from '@mui/material'
+import { Container, Typography, Box, Grid, Stack, useTheme } from '@mui/material'
 import { useInView } from 'react-intersection-observer'
 import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
+import {
+  Code, Web, Storage, GitHub, Build, DeveloperMode
+} from '@mui/icons-material'
 
 function Skills() {
   const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.2 })
   const theme = useTheme()
 
-  const [progress, setProgress] = useState(
-    [
-      { name: 'JavaScript', level: 0, target: 90, color: 'primary' },
-      { name: 'React', level: 0, target: 85, color: 'secondary' },
-      { name: 'Node.js', level: 0, target: 80, color: 'success' },
-      { name: 'HTML/CSS', level: 0, target: 95, color: 'warning' },
-      { name: 'MongoDB', level: 0, target: 70, color: 'info' }
-    ]
-  )
+  const [progress, setProgress] = useState([
+    { name: 'Java', level: 0, target: 80, color: 'primary', icon: <Code /> },
+    { name: 'MySQL', level: 0, target: 85, color: 'secondary', icon: <Storage /> },
+    { name: 'HTML/CSS', level: 0, target: 95, color: 'warning', icon: <Web /> },
+    { name: 'Vite', level: 0, target: 90, color: 'info', icon: <Build /> },
+    { name: 'JavaFX', level: 0, target: 75, color: 'success', icon: <Code /> },
+    { name: 'MERN Stack', level: 0, target: 80, color: 'secondary', icon: <DeveloperMode /> },
+    { name: 'GitHub', level: 0, target: 95, color: 'info', icon: <GitHub /> },
+    { name: 'SpringBoot', level: 0, target: 85, color: 'primary', icon: <Build /> },
+    { name: 'JavaScript', level: 0, target: 90, color: 'primary', icon: <Code /> },
+  ])
 
   useEffect(() => {
     if (inView) {
@@ -74,7 +79,7 @@ function Skills() {
               <Box key={skill.name} sx={{ px: { xs: 0, md: 8 } }}>
                 <Grid container justifyContent="space-between">
                   <Typography variant="body1" sx={{ fontWeight: 600, color: 'text.primary' }}>
-                    {skill.name}
+                    {skill.icon} {skill.name}
                   </Typography>
                 </Grid>
 
@@ -82,7 +87,7 @@ function Skills() {
                   sx={{
                     position: 'relative',
                     height: 24,
-                    bgcolor: theme.palette.mode === 'light' ? '#e0e0e0' : '#333', // Fondo gris claro en modo claro, gris oscuro en modo oscuro
+                    bgcolor: theme.palette.mode === 'light' ? '#e0e0e0' : '#333',
                     borderRadius: 12,
                     overflow: 'hidden',
                     mt: 1,

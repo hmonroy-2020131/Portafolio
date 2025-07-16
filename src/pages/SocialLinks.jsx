@@ -11,12 +11,15 @@ function SocialLinks() {
     <Box
       ref={ref}
       sx={{
-        minHeight: '50vh',
+        minHeight: 'auto',  // La altura ahora es más pequeña
         display: 'flex',
         alignItems: 'center',
-        paddingTop: '64px',
-        bgcolor: 'background.default',
+        justifyContent: 'center',
+        paddingTop: '16px',  // Menos espacio en la parte superior
+        bgcolor: theme.palette.mode === 'light' ? 'linear-gradient(135deg, #b3cde0, #e6f0f8)' : 'background.default',
         transition: 'background-color 0.4s ease',
+        boxShadow: 'none',  // Sin sombra extra
+        paddingBottom: '16px',  // Menos espacio en la parte inferior
       }}
     >
       <Container>
@@ -25,88 +28,125 @@ function SocialLinks() {
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.6 }}
         >
-          {/* Foto */}
+          {/* Avatar */}
           <Avatar
             src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/COZ2HBFBOQTGBTJNMLJFBCZPBI.jpg"
             alt="Hayler"
             sx={{
-              width: 120,
-              height: 120,
+              width: 80,  // Tamaño más pequeño para el avatar
+              height: 80,
               margin: '0 auto 1rem auto',
               boxShadow: 3,
+              border: '3px solid',
+              borderColor: theme.palette.primary.main,
             }}
           />
-          <Typography variant="h4" gutterBottom align="center" sx={{ color: 'text.primary', mb: 3 }}>
+
+          {/* Título */}
+          <Typography
+            variant="h5"
+            gutterBottom
+            align="center"
+            sx={{
+              color: 'text.primary',
+              mb: 2,
+              fontWeight: 700,
+            }}
+          >
             Conéctate conmigo
           </Typography>
-          <Box sx={{ textAlign: 'center', display: 'flex', justifyContent: 'center', gap: 3 }}>
-            {/* Iconos de redes sociales con animación */}
+
+          {/* Texto descriptivo */}
+          <Typography
+            sx={{
+              color: 'text.secondary',
+              fontSize: '0.9rem',
+              textAlign: 'center',
+              marginBottom: '2rem',
+            }}
+          >
+            Encuentra mis perfiles en las siguientes redes sociales.
+          </Typography>
+
+          {/* Iconos de redes sociales */}
+          <Box
+            sx={{
+              textAlign: 'center',
+              display: 'flex',
+              justifyContent: 'center',
+              gap: 3,
+              flexWrap: 'wrap', // Permite que los iconos se acomoden bien en pantallas pequeñas
+            }}
+          >
             <IconButton
               href="https://github.com/hmonroy-2020131"
               target="_blank"
               sx={{
-                width: 56,
-                height: 56,
+                width: 48,
+                height: 48,
                 backgroundColor: theme.palette.primary.main,
                 color: theme.palette.getContrastText(theme.palette.primary.main),
                 borderRadius: '50%',
                 '&:hover': {
                   backgroundColor: theme.palette.primary.dark,
-                  transform: 'scale(1.1)', // Efecto de escala al pasar el ratón
+                  transform: 'scale(1.1)',
                 },
                 transition: 'all 0.3s ease',
               }}
             >
               <GitHub />
             </IconButton>
+
             <IconButton
               href="https://www.instagram.com"
               target="_blank"
               sx={{
-                width: 56,
-                height: 56,
+                width: 48,
+                height: 48,
                 backgroundColor: theme.palette.secondary.main,
                 color: theme.palette.getContrastText(theme.palette.secondary.main),
                 borderRadius: '50%',
                 '&:hover': {
                   backgroundColor: theme.palette.secondary.dark,
-                  transform: 'scale(1.1)', // Efecto de escala al pasar el ratón
+                  transform: 'scale(1.1)',
                 },
                 transition: 'all 0.3s ease',
               }}
             >
               <Instagram />
             </IconButton>
+
             <IconButton
               href="https://www.facebook.com"
               target="_blank"
               sx={{
-                width: 56,
-                height: 56,
+                width: 48,
+                height: 48,
                 backgroundColor: theme.palette.info.main,
                 color: theme.palette.getContrastText(theme.palette.info.main),
                 borderRadius: '50%',
                 '&:hover': {
                   backgroundColor: theme.palette.info.dark,
-                  transform: 'scale(1.1)', // Efecto de escala al pasar el ratón
+                  transform: 'scale(1.1)',
                 },
                 transition: 'all 0.3s ease',
               }}
             >
               <Facebook />
             </IconButton>
+
             <IconButton
               href="https://twitter.com"
               target="_blank"
               sx={{
-                width: 56,
-                height: 56,
+                width: 48,
+                height: 48,
                 backgroundColor: theme.palette.info.main,
                 color: theme.palette.getContrastText(theme.palette.info.main),
                 borderRadius: '50%',
                 '&:hover': {
                   backgroundColor: theme.palette.info.dark,
-                  transform: 'scale(1.1)', // Efecto de escala al pasar el ratón
+                  transform: 'scale(1.1)',
                 },
                 transition: 'all 0.3s ease',
               }}
