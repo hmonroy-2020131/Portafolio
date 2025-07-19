@@ -75,7 +75,7 @@ function About() {
             >
               <Avatar
                 alt="Hayler"
-                src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/COZ2HBFBOQTGBTJNMLJFBCZPBI.jpg"
+                src="/src/assets/Yo.jpeg"
                 sx={{
                   width: 120,
                   height: 120,

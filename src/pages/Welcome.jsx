@@ -11,8 +11,8 @@ function Welcome() {
       ref={ref}
       sx={{
         background: theme.palette.mode === 'light'
-          ? 'linear-gradient(135deg, rgba(252, 72, 124, 0.8), rgba(97, 218, 255, 0.6))' // Llamativo en modo claro
-          : 'background.default', // Modo oscuro tradicional
+          ? 'linear-gradient(135deg, rgba(252, 72, 124, 0.8), rgba(97, 218, 255, 0.6))' 
+          : 'background.default', 
         minHeight: '100vh',
         display: 'flex',
         alignItems: 'center',
@@ -32,8 +32,8 @@ function Welcome() {
               textAlign: 'center',
               padding: '4rem 2rem',
               bgcolor: theme.palette.mode === 'light'
-                ? 'rgba(255, 255, 255, 0.85)' // Fondo más claro en modo claro
-                : 'rgba(30, 30, 30, 0.8)', // Fondo oscuro con opacidad
+                ? 'rgba(255, 255, 255, 0.85)' 
+                : 'rgba(30, 30, 30, 0.8)', 
               backdropFilter: 'blur(15px)',
               borderRadius: '20px',
               boxShadow: 10,
@@ -76,7 +76,7 @@ function Welcome() {
                 margin: '0 auto',
               }}
             >
-              “Creando soluciones, aprendiendo cada día”
+              “El software es el mejor megáfono del mundo.”
             </Typography>
           </Box>
         </motion.div>

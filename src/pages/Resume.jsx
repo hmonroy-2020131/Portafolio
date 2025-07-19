@@ -21,7 +21,7 @@ function Resume() {
     {
       title: 'Estudiante de Perito en Computación',
       institution: 'Centro Educativo Técnico KINAL',
-      period: '2022 - Actualidad',
+      period: '2020 - Actualidad',
       description:
         'Actualmente formándome como desarrollador con sólidos conocimientos en backend y frontend.',
       icon: <SchoolIcon />,

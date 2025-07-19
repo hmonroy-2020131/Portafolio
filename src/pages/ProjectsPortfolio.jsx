@@ -100,7 +100,7 @@ function ProjectsPortfolio() {
                           objectFit: 'cover',
                           transition: 'transform 0.3s ease',
                           '&:hover': {
-                            transform: 'scale(1.1)', // Efecto de zoom en la imagen
+                            transform: 'scale(1.1)', 
                           },
                         }}
                       />

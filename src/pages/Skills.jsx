@@ -11,15 +11,15 @@ function Skills() {
   const theme = useTheme()
 
   const [progress, setProgress] = useState([
-    { name: 'Java', level: 0, target: 80, color: 'primary', icon: <Code /> },
-    { name: 'MySQL', level: 0, target: 85, color: 'secondary', icon: <Storage /> },
-    { name: 'HTML/CSS', level: 0, target: 95, color: 'warning', icon: <Web /> },
-    { name: 'Vite', level: 0, target: 90, color: 'info', icon: <Build /> },
-    { name: 'JavaFX', level: 0, target: 75, color: 'success', icon: <Code /> },
-    { name: 'MERN Stack', level: 0, target: 80, color: 'secondary', icon: <DeveloperMode /> },
-    { name: 'GitHub', level: 0, target: 95, color: 'info', icon: <GitHub /> },
-    { name: 'SpringBoot', level: 0, target: 85, color: 'primary', icon: <Build /> },
-    { name: 'JavaScript', level: 0, target: 90, color: 'primary', icon: <Code /> },
+    { name: 'Java', level: 0, target: 80, color: '#FF5733', icon: <Code /> }, 
+    { name: 'MySQL', level: 0, target: 75, color: '#00758F', icon: <Storage /> }, 
+    { name: 'HTML/CSS', level: 0, target: 95, color: '#E44D26', icon: <Web /> }, 
+    { name: 'Vite', level: 0, target: 80, color: '#646CFF', icon: <Build /> }, 
+    { name: 'JavaFX', level: 0, target: 70, color: '#4CAF50', icon: <Code /> }, 
+    { name: 'MERN Stack', level: 0, target: 85, color: '#9C27B0', icon: <DeveloperMode /> }, 
+    { name: 'GitHub', level: 0, target: 95, color: '#333', icon: <GitHub /> }, // Dark
+    { name: 'SpringBoot', level: 0, target: 70, color: '#6DB33F', icon: <Build /> }, 
+    { name: 'JavaScript', level: 0, target: 90, color: '#F7DF1E', icon: <Code /> }, 
   ])
 
   useEffect(() => {
@@ -50,8 +50,8 @@ function Skills() {
         alignItems: 'center',
         paddingTop: '64px',
         bgcolor: theme.palette.mode === 'light'
-          ? 'linear-gradient(135deg, #b3cde0, #e6f0f8)' // Fondo claro con gradiente en modo claro
-          : theme.palette.background.default, // Fondo predeterminado en modo oscuro
+          ? 'linear-gradient(135deg, #b3cde0, #e6f0f8)' 
+          : theme.palette.background.default, 
         transition: 'background-color 0.4s ease',
       }}
     >
@@ -103,7 +103,7 @@ function Skills() {
                       left: 0,
                       height: '100%',
                       width: `${skill.level}%`,
-                      background: `linear-gradient(90deg, ${theme.palette[skill.color].light}, ${theme.palette[skill.color].main})`,
+                      backgroundColor: skill.color, 
                       borderRadius: 12,
                       transition: 'width 0.3s ease-out',
                     }}
@@ -120,7 +120,7 @@ function Skills() {
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
-                      color: theme.palette.getContrastText(theme.palette[skill.color].main),
+                      color: theme.palette.getContrastText(skill.color),
                       fontWeight: 700,
                       fontSize: '0.8rem',
                       pointerEvents: 'none'

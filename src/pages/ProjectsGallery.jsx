@@ -62,7 +62,7 @@ function ProjectsGallery() {
                       src={project.image}
                       alt={project.title}
                       style={{ width: '200px', height: 'auto', borderRadius: '10px', cursor: 'pointer' }}
-                      onClick={() => handleOpen(project.image)}  // Abre el modal al hacer clic
+                      onClick={() => handleOpen(project.image)}  
                     />
                   </motion.div>
                   <Box sx={{ flex: 1 }}>

@@ -11,15 +11,15 @@ function SocialLinks() {
     <Box
       ref={ref}
       sx={{
-        minHeight: 'auto',  // La altura ahora es más pequeña
+        minHeight: 'auto',  
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        paddingTop: '16px',  // Menos espacio en la parte superior
+        paddingTop: '16px', 
         bgcolor: theme.palette.mode === 'light' ? 'linear-gradient(135deg, #b3cde0, #e6f0f8)' : 'background.default',
         transition: 'background-color 0.4s ease',
-        boxShadow: 'none',  // Sin sombra extra
-        paddingBottom: '16px',  // Menos espacio en la parte inferior
+        boxShadow: 'none',  
+        paddingBottom: '16px',  
       }}
     >
       <Container>
@@ -30,10 +30,10 @@ function SocialLinks() {
         >
           {/* Avatar */}
           <Avatar
-            src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/COZ2HBFBOQTGBTJNMLJFBCZPBI.jpg"
+            src="/src/assets/Yo.jpeg"
             alt="Hayler"
             sx={{
-              width: 80,  // Tamaño más pequeño para el avatar
+              width: 80, 
               height: 80,
               margin: '0 auto 1rem auto',
               boxShadow: 3,
@@ -75,7 +75,7 @@ function SocialLinks() {
               display: 'flex',
               justifyContent: 'center',
               gap: 3,
-              flexWrap: 'wrap', // Permite que los iconos se acomoden bien en pantallas pequeñas
+              flexWrap: 'wrap', 
             }}
           >
             <IconButton
