@@ -7,21 +7,21 @@ const projects = [
     description: 'Este proyecto se centra en el desarrollo de una API web implementada en NodeJS, destinada a gestionar el registro de ventas, productos en línea y otras operaciones comerciales de una empresa. La aplicación se estructura en dos secciones principales, administrador y cliente, cada uno con funcionalidades específicas.',
     skills: ['NodeJS', 'API', 'Express', 'MongoDB'],
     githubLink: 'https://github.com/hmonroy-2020131/ProyectoFInal.git',
-    image: '/src/assets/Pfinal.png',
+    image: 'https://i.postimg.cc/VkSLL1F0/Pfinal.png',
   },
   {
     title: 'COPEREX',
     description: 'La empresa COPEREX está buscando desarrollar una solución eficiente y moderna para gestionar la incorporación de nuevos socios y empresas a su famosa feria “Interfer”. Se creó una API robusta utilizando Node.js, Express y MongoDB. Esta API permite generar un reporte en formato Excel con los datos de las empresas registradas.',
     skills: ['Node.js', 'Express', 'MongoDB', 'Excel Report'],
     githubLink: 'https://github.com/hmonroy-2020131/COPEREX.git',
-    image: '/src/assets/Coperex.png',
+    image: 'https://i.postimg.cc/nVkL33zr/Coperex.png',
   },
   {
     title: 'Sistema de Adopción',
     description: 'Este proyecto consiste en un sistema de adopción de mascotas utilizando MongoDB. Se incorporaron funcionalidades como la actualización de datos de usuarios, actualización de contraseñas, eliminación de registros y la posibilidad de agregar citas para encuentros con las mascotas.',
     skills: ['MongoDB', 'NodeJS', 'API'],
     githubLink: 'https://github.com/hmonroy-2020131/MongoDB.git',
-    image: '/src/assets/Adop.png',
+    image: 'https://i.postimg.cc/2yzSzZHC/Adop.png',
   }
 ]
 

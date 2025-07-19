@@ -75,7 +75,7 @@ function About() {
             >
               <Avatar
                 alt="Hayler"
-                src="/src/assets/Yo.jpeg"
+                src="https://i.postimg.cc/NfjjSR94/Yo.jpg"
                 sx={{
                   width: 120,
                   height: 120,

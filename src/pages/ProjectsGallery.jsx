@@ -5,28 +5,28 @@ import { useState } from 'react'
 const projects = [
   {
     title: 'Pokemon',
-    image: '/src/assets/pokemon.png',
+    image: 'https://i.postimg.cc/52Z9XGP7/pokemon.png',
     description: 'Proyecto donde consumimos la API de Pokémon (PokeAPI) para buscar Pokémon por su número y mostrar algunas de sus estadísticas.',
     skills: ['API', 'React', 'JavaScript'],
     githubLink: 'https://github.com/hmonroy-2020131/Pokemon-App.git',
   },
   {
     title: 'RickAndMortyAPP',
-    image: '/src/assets/randm.png',
+    image: 'https://i.postimg.cc/fbmzmKpw/randm.png',
     description: 'Aplicación que consume la API de Rick and Morty para listar personajes, que se pueden buscar por nombre o tipo.',
     skills: ['API', 'React', 'JavaScript'],
     githubLink: 'https://github.com/hmonroy-2020131/RickAndMorty.git',
   },
   {
     title: 'Hotelería',
-    image: '/src/assets/hotel.png',
+    image: 'https://i.postimg.cc/tTdgQ5Nr/hotel.png',
     description: 'Plataforma web para la gestión hotelera, donde los usuarios pueden buscar hoteles, reservar habitaciones y ver eventos asociados.',
     skills: ['Node.js', 'MongoDB', 'Express', 'Frontend'],
     githubLink: 'https://github.com/grupo-3-IN6CM-1/Hoteleria-Front.git',
   },
   {
     title: 'Blog de Aprendizaje',
-    image: '/src/assets/blog.png',
+    image: 'https://i.postimg.cc/tJ2C74fW/blog.png',
     description: 'Blog educativo donde se publican actividades de cursos técnicos. Los usuarios pueden interactuar dejando comentarios en las publicaciones.',
     skills: ['React', 'Node.js', 'MongoDB', 'Backend'],
     githubLink: 'https://github.com/hmonroy-2020131/5-Blog-de-aprendizaje-frontend.git',

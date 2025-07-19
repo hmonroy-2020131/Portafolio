@@ -30,7 +30,7 @@ function SocialLinks() {
         >
           {/* Avatar */}
           <Avatar
-            src="/src/assets/Yo.jpeg"
+            src="https://i.postimg.cc/NfjjSR94/Yo.jpg"
             alt="Hayler"
             sx={{
               width: 80, 
